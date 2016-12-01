@@ -1,5 +1,5 @@
 def generation(n=5, k=1, m=0):
-    if k == 0 or n < 5:
+    if k == 0:
         return 0
     quantity = n // 5
     for i in range(quantity + 1):
