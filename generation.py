@@ -1,10 +1,8 @@
-def generation(n=5, k=1, m=0):
-    if k == 0:
+def generation(cash=5, people=1, m=1):
+    if people == 0:
         return 0
-    quantity = n // 5
+    quantity = cash // 5
     for i in range(quantity + 1):
-        if m == 0:
-            m += 1
-        m += generation(n - i, k - 1)
+        m += generation(cash - i, people - 1)
     return m
 print(generation(15, 2))
