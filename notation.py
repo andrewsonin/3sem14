@@ -8,9 +8,9 @@ def notate(base=10, a=0, new_base=10):
     while sum > 0:
         residue = sum % new_base
         if residue >= 10:
-            new_number = new_number + chr(55 + residue)
+            new_number += chr(55 + residue)
         else:
-            new_number = new_number + str(residue)
+            new_number += str(residue)
         sum = sum // new_base
     return str(new_number)[-1::-1]
 
