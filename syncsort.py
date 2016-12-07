@@ -1,5 +1,5 @@
-def syncsort(A, B):
-    massive = sorted(tuple(zip(A, B)), key=lambda x: x[1])  # можно добавить параметр reverse. По ум. False
+def syncsort(linked_list, list_for_sort):
+    massive = sorted(tuple(zip(linked_list, list_for_sort)), key=lambda x: x[1])  # можно добавить параметр reverse. По ум. False
     lenmass = len(massive)
     for i in range(lenmass - 1):
         j = i
